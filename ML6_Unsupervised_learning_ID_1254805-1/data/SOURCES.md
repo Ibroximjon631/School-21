@@ -16,6 +16,7 @@ No extra packages had to be installed — `curl` + `unzip` + the preinstalled st
 | `mnist.npz` | 11.0 MB | X (70000, 784), y (70000,) | task 3, submission |
 | `Video_008.avi` | 3.0 MB | 792 frames, 320x240, 10 fps | task 5 |
 | `fer2013.npz` | 74.7 MB | X (35887, 48, 48), y (35887,) | Chapter VI bonus |
+| `gray_china.png`, `gray_flower.png`, `gray_hopper.png` | 0.5 MB total | 427x640, 427x640, 600x512 grayscale | task 4 (**generated**, not downloaded) |
 
 ---
 
@@ -239,17 +240,33 @@ for i, (img, lab, sp) in enumerate(zip(d['X'], d['y'], d['split'])):
 
 ---
 
-## Not downloaded: task 4 images
+## 5. Task 4 images — `gray_china.png`, `gray_flower.png`, `gray_hopper.png`
 
-Task 4 ("Image compression using SVD") only says *"select 3 random grayscale images"* — it names
-no dataset, so nothing was downloaded. Offline options already available in this venv:
+**Nothing was downloaded for task 4.** It only says *"select 3 random grayscale images"* and names
+no dataset, so the three images are taken from sample photos **bundled with libraries already in
+this venv** — which is what keeps `04_image_compression.ipynb` fully offline and reproducible:
 
-* `sklearn.datasets.load_sample_images()` — 2 bundled colour photos, convert with `.mean(axis=2)`
-* any 3 frames of `data/Video_008.avi` converted with `cv2.cvtColor(..., cv2.COLOR_BGR2GRAY)`
-* MNIST digits from `data/mnist.npz` (small, 28x28 — poor for showing a singular-value spectrum)
+| file | origin | character |
+|---|---|---|
+| `gray_flower.png` (427x640) | `sklearn.datasets.load_sample_image("flower.jpg")` | smooth, shallow depth of field |
+| `gray_hopper.png` (600x512) | `matplotlib.cbook.get_sample_data("grace_hopper.jpg")` | portrait, strong edges |
+| `gray_china.png` (427x640) | `sklearn.datasets.load_sample_image("china.jpg")` | heavily textured, high-frequency |
 
-A larger natural image (~512x512+) gives a much more interesting singular value spectrum than a
-28x28 digit.
+The three PNGs are **produced by the notebook itself**, not fetched: `04_image_compression.ipynb`
+loads each bundled RGB photo, converts it to a single grayscale channel with the BT.601 luma
+weights and writes the result to `data/` so a reviewer can inspect the exact input matrices.
+
+```python
+# 04_image_compression.ipynb, cell 3
+gray = cv2.cvtColor(np.asarray(rgb, dtype=np.uint8), cv2.COLOR_RGB2GRAY)   # Y = 0.299R + 0.587G + 0.114B
+cv2.imwrite(f"data/gray_{name}.png", gray)
+```
+
+They are therefore regenerated (bit-for-bit identical) on every run of that notebook and can be
+deleted at any time. Other offline options that were considered and not used: frames of
+`data/Video_008.avi`, and MNIST digits from `data/mnist.npz` (only 28x28 — too small to show an
+interesting singular-value spectrum; a natural image of ~512x512 or larger is much more
+informative).
 
 ---
 
@@ -261,3 +278,13 @@ but **`*.npz` is not tracked by LFS**, so `mnist.npz` (11 MB) and especially `fe
 `*.npz filter=lfs diff=lfs merge=lfs -text` to `.gitattributes`, or excluding `data/` from the
 repo entirely and relying on this file to reproduce it. This was left as-is — it is a repo
 policy decision.
+
+## Note on the two files that are not in git
+
+`Books.csv` (73.3 MB) and `fer2013.npz` (78.3 MB) exceed the school GitLab's
+per-object limit — pushing them returns HTTP 413 — so they are gitignored.
+Re-create them with the download commands documented in the sections above:
+`Books.csv` is only used by `02_sparse_features.ipynb` to label SVD components
+with book titles, and `fer2013.npz` is only used by the bonus notebook
+`06_bonus_faces.ipynb`. Every other notebook runs from the files that are in
+the repository.

@@ -56,3 +56,8 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .idea/
+
+# Datasets too large for the GitLab LFS object limit (HTTP 413 on push).
+# Regenerate with the exact commands in data/SOURCES.md.
+data/Books.csv
+data/fer2013.npz
