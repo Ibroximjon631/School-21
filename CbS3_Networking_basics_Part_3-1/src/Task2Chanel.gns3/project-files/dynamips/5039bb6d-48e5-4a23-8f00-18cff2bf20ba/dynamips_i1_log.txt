@@ -1,0 +1,63 @@
+Dec 30 05:13:02.508 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 30 05:13:02.508 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42827.
+Dec 30 05:13:02.516 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/untitled/project-files/dynamips 
+Dec 30 05:13:02.517 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/untitled/project-files/dynamips
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/untitled/project-files/dynamips/80fa8d80-4a2a-4100-bf6c-e187fb319ace 
+Dec 30 05:13:02.517 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/untitled/project-files/dynamips/80fa8d80-4a2a-4100-bf6c-e187fb319ace
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Dec 30 05:13:02.517 VM: VM R1 created.
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 05:13:02.517 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Dec 30 05:13:02.518 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 30 05:13:02.518 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 30 05:13:02.518 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:13:02.518 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Dec 30 05:13:02.587 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 05:13:04.893 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 05:13:15.505 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 05:28:41.680 HYPERVISOR: exec_cmd: nio create_udp udp-f304a42b-8f2c-481a-8060-b4a9ef25727e 10010 127.0.0.1 10011 
+Dec 30 05:28:41.893 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-f304a42b-8f2c-481a-8060-b4a9ef25727e 
+Dec 30 05:28:41.893 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:31:17.752 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:31:17.752 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Dec 30 05:31:17.754 HYPERVISOR: exec_cmd: nio delete udp-f304a42b-8f2c-481a-8060-b4a9ef25727e 
+Dec 30 05:40:06.793 HYPERVISOR: exec_cmd: nio create_udp udp-269c616f-162b-4509-bba6-ad4015e863b5 10010 127.0.0.1 10011 
+Dec 30 05:40:06.794 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-269c616f-162b-4509-bba6-ad4015e863b5 
+Dec 30 05:40:06.794 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:40:18.988 HYPERVISOR: exec_cmd: nio create_udp udp-4e246acd-7bb3-4c09-8f5d-a5cb32c239e9 10014 127.0.0.1 10015 
+Dec 30 05:40:18.990 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-4e246acd-7bb3-4c09-8f5d-a5cb32c239e9 
+Dec 30 05:40:18.990 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:40:25.702 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:40:25.703 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Dec 30 05:40:25.704 HYPERVISOR: exec_cmd: nio delete udp-4e246acd-7bb3-4c09-8f5d-a5cb32c239e9 
+Dec 30 05:40:32.588 HYPERVISOR: exec_cmd: nio create_udp udp-48138f92-b5f1-4166-a994-364311c5f2ae 10014 127.0.0.1 10015 
+Dec 30 05:40:32.590 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-48138f92-b5f1-4166-a994-364311c5f2ae 
+Dec 30 05:40:32.590 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:44:42.794 HYPERVISOR: exec_cmd: nio create_udp udp-98ce7e24-b692-40e2-9629-7f694b913525 10026 127.0.0.1 10027 
+Dec 30 05:44:42.795 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-98ce7e24-b692-40e2-9629-7f694b913525 
+Dec 30 05:44:42.796 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:44:47.961 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Dec 30 05:44:47.961 VM: VM Ghost created.
+Dec 30 05:44:47.962 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 05:44:47.963 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 30 05:44:47.966 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/ibroximjon/GNS3/projects/untitled/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 30 05:44:47.967 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Dec 30 05:44:47.967 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 30 05:44:47.967 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Dec 30 05:44:47.968 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 30 05:44:48.263 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 30 05:44:48.264 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 30 05:44:48.420 VM: VM Ghost shutdown.
+Dec 30 05:44:48.421 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Dec 30 05:44:48.422 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 30 05:44:48.422 VM: VM Ghost destroyed.
+Dec 30 05:44:48.424 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Dec 30 05:44:48.424 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/ibroximjon/GNS3/projects/untitled/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 30 05:44:48.424 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 05:44:48.425 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Dec 30 05:44:48.425 HYPERVISOR: exec_cmd: vm start R1 
+Dec 30 06:25:18.849 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 30 06:25:18.874 HYPERVISOR: exec_cmd: vm extract_config R1 

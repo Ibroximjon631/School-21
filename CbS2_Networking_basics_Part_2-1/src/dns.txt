@@ -1,0 +1,8 @@
+ DORA — DHCP jarayonidagi bosqichlar:
+   - Discover: mijoz serverni qidiradi.
+   - Offer: server IP taklif qiladi.
+   - Request: mijoz taklifni qabul qiladi.
+   - Acknowledge: server tasdiqlaydi.
+   
+   
+    Birinchi DHCP paketi 255.255.255.255 manzilga yuboriladi.

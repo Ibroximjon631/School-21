@@ -1,0 +1,8 @@
+1) Reverse shell инициировался c IP адреса 192.168.1.100.
+
+2) Reverse shell был проброшен на IP адрес 192.168.1.101.
+
+3) С помощью протокола TCP был осуществлен reverse shell.
+
+4) Были переданы команды:"id", "uname -a", "whoami", "Is -la /etc", "cat/etc/passwd".
+

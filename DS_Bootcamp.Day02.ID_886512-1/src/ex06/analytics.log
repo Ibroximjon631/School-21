@@ -1,0 +1,10 @@
+2025-09-25 10:44:02 Initialized Research with filepath: data.csv
+2025-09-25 10:44:02 File read successfully with 11 entries.
+2025-09-25 10:44:02 File read successfully with 11 entries.
+2025-09-25 10:44:02 Calculated counts: heads=5, tails=6
+2025-09-25 10:44:02 Calculated fractions: heads_prob=45.45, tails_prob=54.55
+2025-09-25 10:44:02 Predicted random results: heads_pred=1, tails_pred=2
+2025-09-25 10:44:02 Data saved to report_file.txt
+2025-09-25 10:44:02 Starting new HTTPS connection (1): api.telegram.org:443
+2025-09-25 10:44:03 https://api.telegram.org:443 "POST /bot7823021591:AAEw18u8Mr8tim2Mw31h8lilawg87W4-k-E/sendMessage HTTP/1.1" 200 294
+2025-09-25 10:44:03 Telegram message sent successfully: The report has been successfully created.

@@ -1,0 +1,27 @@
+
+
+1
+
+
+1.  178.101.89.7
+2.  201.57.153.161
+
+2likga o'tkazish:
+
+
+1.  10110010.01100101.01011001.00000111
+2.  11001001.00111001.10011001.10100001
+
+
+
+1. 3Machines  uchun 4 Ip kerak bo'ladi. Bizga 2bitligi kerak. 4ta IP: Tarmoq manzili kerak 1ta Machineslarga bo'lish ucun va 2Host kerak Machines larga bo'lish ucun .Kegn 1ta Broadcast kerak Deviceslarga bo'lish ucun.Bizga /30 Maskasi kerak Bu Maska 2bit ajratadi Kopinca 2Devices ni boglash ucun kerak boladi. /30 Maskasi 11111111.11111111.11111111.11111100 Buni 10likga otkazsak ham boladi. 255.255.255.252 boladi
+2ning darajasida bilib olsak boladi 2*2=4 Ip
+2.  16ta Server ucun 16IP manzil kerak lekn bz Broadcast ni, Tarmoq manzilni ham hisoblash kerak 18IP kerak boladi. 2*N=18 Tahminan 5bit va Biz 32 bitlik maska beramz. 32-5bit =27 bit
+Binar shaklida 11111111.11111111.11111111.11100000
+10likga otkazsak 255.255.255.224 boladi.
+1 ta tarmoq manzili,
+30 ta xost manzillari(Ulardan 16 tasi serverlar uchun ajratsak boladi.)
+1 ta broadcast manzili.
+
+3. 32ta.User uchun 34 ta kerak boladi va 2*N=34. 6bit kerak va yetarli boladi. 32-6=26bit 11111111.11111111.11111111.11000000
+255.255.255.192 (/26)

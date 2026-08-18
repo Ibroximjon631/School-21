@@ -1,0 +1,6 @@
+Hello, world!
+This is a test file.
+HELLO AGAIN!
+Empty line follows:
+
+Goodbye, world!

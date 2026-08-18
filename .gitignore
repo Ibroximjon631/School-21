@@ -1,0 +1,10 @@
+# GitHub 100MB limit - oversized GNS3/Dynamips emulator images
+CbS3_Networking_basics_Part_3-1/src/*/project-files/dynamips/*.ghost
+
+# Common junk safety net
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/.venv/
+**/venv/
+**/.idea/
+**/.DS_Store

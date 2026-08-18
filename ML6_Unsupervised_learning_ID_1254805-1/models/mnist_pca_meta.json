@@ -1,0 +1,39 @@
+{
+  "artifact": "models/mnist_pca.joblib",
+  "estimator": "sklearn.decomposition.PCA",
+  "params": {
+    "copy": true,
+    "iterated_power": "auto",
+    "n_components": 2,
+    "n_oversamples": 10,
+    "power_iteration_normalizer": "auto",
+    "random_state": 42,
+    "svd_solver": "full",
+    "tol": 0.0,
+    "whiten": false
+  },
+  "fitted_on": {
+    "dataset": "MNIST (data/mnist.npz, train 60k + test 10k, openml ordering)",
+    "subsample": "10000 of 70000, exactly 1000 per digit, np.random.default_rng(42).choice per class, indices sorted",
+    "preprocessing": "X.astype(np.float64) / 255.0",
+    "shape": [
+      10000,
+      784
+    ]
+  },
+  "expects": {
+    "dtype": "float64",
+    "shape": "(n_samples, 784)",
+    "range": "[0.0, 1.0]"
+  },
+  "explained_variance_ratio": [
+    0.09564649763590953,
+    0.07164690722032185
+  ],
+  "versions": {
+    "scikit-learn": "1.9.0",
+    "numpy": "2.5.2",
+    "joblib": "1.5.3",
+    "python": "3.12.3"
+  }
+}

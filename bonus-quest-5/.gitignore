@@ -1,0 +1,10 @@
+# Node.js project
+node_modules/
+npm-debug.log
+
+# Python project
+*.pyc
+__pycache__/
+
+# Mac system files
+.DS_Store

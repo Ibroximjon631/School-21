@@ -1,0 +1,51 @@
+Dec 30 07:06:42.997 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 30 07:06:42.997 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59293.
+Dec 30 07:06:43.004 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 30 07:06:43.004 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/Task3.gns3/project-files/dynamips 
+Dec 30 07:06:43.004 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/Task3.gns3/project-files/dynamips
+Dec 30 07:06:43.004 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/Task3.gns3/project-files/dynamips/edcabbdd-5b5b-474f-a99d-c45fb79932c3 
+Dec 30 07:06:43.004 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/Task3.gns3/project-files/dynamips/edcabbdd-5b5b-474f-a99d-c45fb79932c3
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Dec 30 07:06:43.005 VM: VM R3 created.
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5022 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm set_ios R3 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 30 07:06:43.005 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-16ESW 
+Dec 30 07:06:43.042 HYPERVISOR: exec_cmd: vm set_ios R3 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 07:07:33.918 HYPERVISOR: exec_cmd: nio create_udp udp-6753591f-d948-4598-af25-165c5acdb0c7 10062 127.0.0.1 10063 
+Dec 30 07:07:34.123 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-6753591f-d948-4598-af25-165c5acdb0c7 
+Dec 30 07:07:34.123 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 30 07:08:49.832 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 30 07:08:49.832 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Dec 30 07:08:49.833 HYPERVISOR: exec_cmd: nio delete udp-6753591f-d948-4598-af25-165c5acdb0c7 
+Dec 30 07:09:35.931 HYPERVISOR: exec_cmd: nio create_udp udp-52d568ee-06cb-4156-81da-5810e70b5d3b 10062 127.0.0.1 10063 
+Dec 30 07:09:35.931 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-52d568ee-06cb-4156-81da-5810e70b5d3b 
+Dec 30 07:09:35.931 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 30 07:10:45.165 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Dec 30 07:10:45.165 VM: VM Ghost created.
+Dec 30 07:10:45.165 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 07:10:45.165 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 30 07:10:45.165 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/ibroximjon/GNS3/projects/Task3.gns3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 30 07:10:45.165 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Dec 30 07:10:45.166 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 30 07:10:45.166 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Dec 30 07:10:45.166 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 30 07:10:45.454 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 30 07:10:45.454 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 30 07:10:45.607 VM: VM Ghost shutdown.
+Dec 30 07:10:45.607 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Dec 30 07:10:45.608 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 30 07:10:45.608 VM: VM Ghost destroyed.
+Dec 30 07:10:45.609 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Dec 30 07:10:45.609 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/ibroximjon/GNS3/projects/Task3.gns3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 30 07:10:45.609 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 30 07:10:45.609 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Dec 30 07:10:45.610 HYPERVISOR: exec_cmd: vm start R3 
+Dec 30 07:19:58.547 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 30 07:19:58.547 HYPERVISOR: exec_cmd: vm stop R3 
+Dec 30 07:19:58.621 VM: VM R3 shutdown.
+Dec 30 07:19:58.622 HYPERVISOR: exec_cmd: vm extract_config R3 

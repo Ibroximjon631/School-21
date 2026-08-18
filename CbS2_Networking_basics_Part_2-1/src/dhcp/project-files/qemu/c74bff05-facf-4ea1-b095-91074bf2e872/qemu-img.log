@@ -1,0 +1,1 @@
+Formatting '/home/ibroximjon/GNS3/projects/dhcp/project-files/qemu/c74bff05-facf-4ea1-b095-91074bf2e872/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=3653632 backing_file=/home/ibroximjon/GNS3/images/QEMU/OVMF_CODE.fd backing_fmt=raw lazy_refcounts=off refcount_bits=16

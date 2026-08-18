@@ -1,0 +1,2 @@
+python3 -m cProfile financial.py 'MSFT' 'Total Revenue' > profiling-sleep.txt
+for sort: sort -k 2 -n profiling-http.txt > profiling-ncalls.txt

@@ -1,0 +1,16 @@
+Dec 25 11:06:21.700 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 25 11:06:21.700 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55355.
+Dec 25 11:06:21.701 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 25 11:06:21.702 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/untitled/project-files/dynamips 
+Dec 25 11:06:21.702 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/untitled/project-files/dynamips
+Dec 25 11:06:21.702 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/untitled/project-files/dynamips/8090bdb4-8152-4b6a-bcb4-f95591f039b8 
+Dec 25 11:06:21.702 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/untitled/project-files/dynamips/8090bdb4-8152-4b6a-bcb4-f95591f039b8
+Dec 25 11:06:21.702 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Dec 25 11:06:21.704 VM: VM R1 created.
+Dec 25 11:06:21.705 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Dec 25 11:06:21.705 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Dec 25 11:06:21.705 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 25 11:06:21.706 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Dec 25 11:06:21.706 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 25 11:06:21.707 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 25 11:06:21.964 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 

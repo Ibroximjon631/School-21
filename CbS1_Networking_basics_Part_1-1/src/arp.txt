@@ -1,0 +1,19 @@
+1. Birinchi ARP so'rovi yuborilganda yuborilgan MAC manzili: Frame 1: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface wlp0s20f3, id 0
+Ethernet II, Src: Routerboardc_90:09:c9 (48:a9:8a:90:09:c9), Dst: Intel_52:b2:1e (04:ec:d8:52:b2:1e)
+    Destination: Intel_52:b2:1e (04:ec:d8:52:b2:1e)
+        Address: Intel_52:b2:1e (04:ec:d8:52:b2:1e)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Routerboardc_90:09:c9 (48:a9:8a:90:09:c9)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.234.126.59, Dst: 192.168.88.153
+Transmission Control Protocol, Src Port: 443, Dst Port: 33220, Seq: 1, Ack: 1, Len: 0
+
+
+(04:ec:d8:52:b2:1e)
+
+
+2. Bu manzil broadcast MAC manzili deb ataladi.
+3. ARP javobidagi MAC manzili: Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  192.168.1.2             -   c402.220c.0000  ARPA   FastEthernet0/0
+

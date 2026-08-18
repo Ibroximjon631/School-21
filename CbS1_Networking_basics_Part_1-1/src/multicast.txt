@@ -1,0 +1,50 @@
+
+
+04:ec:d8:52:b2:1e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Frame 1: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface wlp0s20f3, id 0
+Ethernet II, Src: Routerboardc_90:09:c9 (48:a9:8a:90:09:c9), Dst: Intel_52:b2:1e (04:ec:d8:52:b2:1e)
+    Destination: Intel_52:b2:1e (04:ec:d8:52:b2:1e)
+    Source: Routerboardc_90:09:c9 (48:a9:8a:90:09:c9)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.234.126.59, Dst: 192.168.88.153
+Transmission Control Protocol, Src Port: 443, Dst Port: 33220, Seq: 1, Ack: 1, Len: 0
+    Source Port: 443
+    Destination Port: 33220
+    [Stream index: 0]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 0]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1411277161
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1985002222
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window: 478
+    [Calculated window size: 478]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x41c2 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [Timestamps]
+
+

@@ -1,0 +1,51 @@
+Dec 30 06:28:53.097 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 30 06:28:53.098 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57341.
+Dec 30 06:28:53.102 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 30 06:28:53.103 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/Task1.gns3/project-files/dynamips 
+Dec 30 06:28:53.103 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/Task1.gns3/project-files/dynamips
+Dec 30 06:28:53.103 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/Task1.gns3/project-files/dynamips/e9d72749-3a17-4379-8ef7-bde88e5183ae 
+Dec 30 06:28:53.103 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/Task1.gns3/project-files/dynamips/e9d72749-3a17-4379-8ef7-bde88e5183ae
+Dec 30 06:28:53.103 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Dec 30 06:28:53.104 VM: VM R2 created.
+Dec 30 06:28:53.105 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5019 
+Dec 30 06:28:53.105 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Dec 30 06:28:53.106 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 30 06:28:53.106 HYPERVISOR: exec_cmd: vm set_ios R2 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 06:28:53.107 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.2677.0000 
+Dec 30 06:28:53.108 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Dec 30 06:28:53.108 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Dec 30 06:28:53.109 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 06:28:53.109 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Dec 30 06:28:53.110 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5019 
+Dec 30 06:28:53.545 HYPERVISOR: exec_cmd: nio create_udp udp-60485bce-dd8c-4909-bc4a-e46281eb8e5f 10040 127.0.0.1 10041 
+Dec 30 06:28:53.756 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-60485bce-dd8c-4909-bc4a-e46281eb8e5f 
+Dec 30 06:28:53.757 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 06:28:53.825 HYPERVISOR: exec_cmd: nio create_udp udp-7c857bef-caf6-498a-bf86-2ca81a764f68 10044 127.0.0.1 10045 
+Dec 30 06:28:53.827 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-7c857bef-caf6-498a-bf86-2ca81a764f68 
+Dec 30 06:28:53.827 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 06:28:53.920 HYPERVISOR: exec_cmd: nio create_udp udp-5c514306-6e76-49e4-a925-367835dad195 10050 127.0.0.1 10051 
+Dec 30 06:28:53.922 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-5c514306-6e76-49e4-a925-367835dad195 
+Dec 30 06:28:53.922 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 06:33:14.702 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 30 06:33:14.703 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/ibroximjon/GNS3/projects/Task1.gns3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 30 06:33:14.703 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 06:33:14.703 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Dec 30 06:33:14.703 HYPERVISOR: exec_cmd: vm start R2 
+Dec 30 06:40:20.600 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 06:40:20.600 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 30 06:40:20.722 VM: VM R2 shutdown.
+Dec 30 06:40:20.722 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 30 07:01:20.035 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 30 07:01:20.036 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/ibroximjon/GNS3/projects/Task1.gns3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 30 07:01:20.036 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 07:01:20.037 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Dec 30 07:01:20.037 HYPERVISOR: exec_cmd: vm start R2 
+Dec 30 07:32:59.773 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 30 07:32:59.773 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 30 07:32:59.840 VM: VM R2 shutdown.
+Dec 30 07:32:59.841 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 30 07:32:59.842 HYPERVISOR: exec_cmd: vm delete R2 
+Dec 30 07:32:59.842 VM: VM R2 destroyed.
+Dec 30 07:32:59.843 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 30 07:33:00.175 HYPERVISOR: Stopped.
+Dec 30 07:33:00.175 GENERAL: reset done.

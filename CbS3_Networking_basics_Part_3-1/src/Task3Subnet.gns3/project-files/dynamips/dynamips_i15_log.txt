@@ -1,0 +1,29 @@
+Dec 30 07:20:15.032 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 30 07:20:15.032 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51177.
+Dec 30 07:20:15.039 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 30 07:20:15.039 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/Task3Subnet.gns3/project-files/dynamips 
+Dec 30 07:20:15.039 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/Task3Subnet.gns3/project-files/dynamips
+Dec 30 07:20:15.039 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ibroximjon/GNS3/projects/Task3Subnet.gns3/project-files/dynamips/683ef46b-3b04-451d-a687-52d65dd12494 
+Dec 30 07:20:15.039 GENERAL: working_dir=/home/ibroximjon/GNS3/projects/Task3Subnet.gns3/project-files/dynamips/683ef46b-3b04-451d-a687-52d65dd12494
+Dec 30 07:20:15.039 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Dec 30 07:20:15.040 VM: VM R1 created.
+Dec 30 07:20:15.040 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5023 
+Dec 30 07:20:15.040 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Dec 30 07:20:15.040 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 30 07:20:15.040 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ibroximjon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 30 07:20:15.040 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.384a.0000 
+Dec 30 07:20:15.040 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 30 07:20:15.041 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Dec 30 07:20:15.041 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 07:20:15.041 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Dec 30 07:20:15.041 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5023 
+Dec 30 07:20:15.110 HYPERVISOR: exec_cmd: nio create_udp udp-33435090-7118-44af-a73f-cb47084a15fd 10066 127.0.0.1 10067 
+Dec 30 07:20:15.315 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-33435090-7118-44af-a73f-cb47084a15fd 
+Dec 30 07:20:15.315 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 07:32:59.857 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 30 07:32:59.857 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 30 07:32:59.858 HYPERVISOR: exec_cmd: vm delete R1 
+Dec 30 07:32:59.858 VM: VM R1 destroyed.
+Dec 30 07:32:59.859 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 30 07:33:00.181 HYPERVISOR: Stopped.
+Dec 30 07:33:00.181 GENERAL: reset done.

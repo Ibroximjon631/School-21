@@ -1,0 +1,4 @@
+Start QEMU with /bin/qemu-system-x86_64 -name iii-1 -m 256M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive file=/home/ibroximjon/GNS3/projects/dhcp/project-files/qemu/c74bff05-facf-4ea1-b095-91074bf2e872/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0 -uuid c74bff05-facf-4ea1-b095-91074bf2e872 -serial telnet:127.0.0.1:5004,server,nowait -monitor tcp:127.0.0.1:33687,server,nowait -net none -device e1000,mac=0c:4b:ff:05:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10005,localaddr=127.0.0.1:10004 -display none
+
+Execution log:
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
